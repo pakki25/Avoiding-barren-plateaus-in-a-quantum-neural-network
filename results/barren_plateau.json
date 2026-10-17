@@ -1,0 +1,195 @@
+{
+  "experiment": "gradient variance vs number of qubits",
+  "layers": 3,
+  "trials": 100,
+  "seed": 42,
+  "cost": "C(theta) = 1 - P(|0...0>) (global cost)",
+  "gradient_component": "dC/dtheta for layer 0, qubit 0, parameter-shift rule",
+  "simulator": "Qiskit statevector (exact, noiseless)",
+  "random": {
+    "records": [
+      {
+        "qubits": 2,
+        "initialization": "random",
+        "trials": 100,
+        "cost": "cost_statevector",
+        "mean_gradient": -0.002047513829370467,
+        "variance": 0.041861982303176316,
+        "variance_stderr": 0.005950003076735386
+      },
+      {
+        "qubits": 3,
+        "initialization": "random",
+        "trials": 100,
+        "cost": "cost_statevector",
+        "mean_gradient": 0.024614955437955048,
+        "variance": 0.013851032310610294,
+        "variance_stderr": 0.001968700007257881
+      },
+      {
+        "qubits": 4,
+        "initialization": "random",
+        "trials": 100,
+        "cost": "cost_statevector",
+        "mean_gradient": -0.005329971027672856,
+        "variance": 0.0029389778898727,
+        "variance_stderr": 0.00041772812764944003
+      },
+      {
+        "qubits": 5,
+        "initialization": "random",
+        "trials": 100,
+        "cost": "cost_statevector",
+        "mean_gradient": -0.0009988879480746838,
+        "variance": 0.0016135987921960652,
+        "variance_stderr": 0.00022934694560449928
+      },
+      {
+        "qubits": 6,
+        "initialization": "random",
+        "trials": 100,
+        "cost": "cost_statevector",
+        "mean_gradient": -5.3874267649565156e-05,
+        "variance": 0.00034937301974052263,
+        "variance_stderr": 4.9657718722668175e-05
+      },
+      {
+        "qubits": 7,
+        "initialization": "random",
+        "trials": 100,
+        "cost": "cost_statevector",
+        "mean_gradient": 0.00020658648054550422,
+        "variance": 9.85720621878889e-05,
+        "variance_stderr": 1.4010422847405131e-05
+      },
+      {
+        "qubits": 8,
+        "initialization": "random",
+        "trials": 100,
+        "cost": "cost_statevector",
+        "mean_gradient": 0.00014258451913662428,
+        "variance": 1.7334087130437878e-05,
+        "variance_stderr": 2.463759862386616e-06
+      },
+      {
+        "qubits": 9,
+        "initialization": "random",
+        "trials": 100,
+        "cost": "cost_statevector",
+        "mean_gradient": 0.0004763505210000113,
+        "variance": 1.0083476242534591e-05,
+        "variance_stderr": 1.4332029055087694e-06
+      },
+      {
+        "qubits": 10,
+        "initialization": "random",
+        "trials": 100,
+        "cost": "cost_statevector",
+        "mean_gradient": 0.00015942856489194968,
+        "variance": 1.620067473661028e-06,
+        "variance_stderr": 2.302663639526368e-07
+      }
+    ],
+    "fit": {
+      "decay_rate_per_qubit": 1.2562671991091419,
+      "decay_rate_stderr": 0.2600697422581169,
+      "prefactor": 0.5828836173973571,
+      "log_slope": -1.2562671991091419,
+      "log_intercept": -0.5397677396655215,
+      "chi2_per_dof": 4.058176250292201
+    }
+  },
+  "near_identity": {
+    "records": [
+      {
+        "qubits": 2,
+        "initialization": "near_identity",
+        "trials": 100,
+        "cost": "cost_statevector",
+        "mean_gradient": -0.003767958644254608,
+        "variance": 0.0020492415818745536,
+        "variance_stderr": 0.00029126651549423946
+      },
+      {
+        "qubits": 3,
+        "initialization": "near_identity",
+        "trials": 100,
+        "cost": "cost_statevector",
+        "mean_gradient": 0.0018857055782640125,
+        "variance": 0.0007007629111151177,
+        "variance_stderr": 9.960210309679071e-05
+      },
+      {
+        "qubits": 4,
+        "initialization": "near_identity",
+        "trials": 100,
+        "cost": "cost_statevector",
+        "mean_gradient": 0.0010175858663201993,
+        "variance": 0.0008145408531520817,
+        "variance_stderr": 0.00011577379559528928
+      },
+      {
+        "qubits": 5,
+        "initialization": "near_identity",
+        "trials": 100,
+        "cost": "cost_statevector",
+        "mean_gradient": -0.0034904540983830873,
+        "variance": 0.0007438425687401372,
+        "variance_stderr": 0.00010572517900746312
+      },
+      {
+        "qubits": 6,
+        "initialization": "near_identity",
+        "trials": 100,
+        "cost": "cost_statevector",
+        "mean_gradient": 0.0011863404938167882,
+        "variance": 0.0007105885155930047,
+        "variance_stderr": 0.00010099865370566565
+      },
+      {
+        "qubits": 7,
+        "initialization": "near_identity",
+        "trials": 100,
+        "cost": "cost_statevector",
+        "mean_gradient": 0.00031663213438046125,
+        "variance": 0.000792705362422151,
+        "variance_stderr": 0.00011267023408489093
+      },
+      {
+        "qubits": 8,
+        "initialization": "near_identity",
+        "trials": 100,
+        "cost": "cost_statevector",
+        "mean_gradient": -0.0019111170059536076,
+        "variance": 0.0008046598021637577,
+        "variance_stderr": 0.00011436936416258462
+      },
+      {
+        "qubits": 9,
+        "initialization": "near_identity",
+        "trials": 100,
+        "cost": "cost_statevector",
+        "mean_gradient": -0.0026359891585539634,
+        "variance": 0.0007989694410907555,
+        "variance_stderr": 0.00011356057145786051
+      },
+      {
+        "qubits": 10,
+        "initialization": "near_identity",
+        "trials": 100,
+        "cost": "cost_statevector",
+        "mean_gradient": 0.000817845992520963,
+        "variance": 0.0008204294344524207,
+        "variance_stderr": 0.00011661076209632296
+      }
+    ],
+    "fit": {
+      "decay_rate_per_qubit": 0.0538152853055449,
+      "decay_rate_stderr": 0.2874776015678524,
+      "prefactor": 0.001188363170561313,
+      "log_slope": -0.0538152853055449,
+      "log_intercept": -6.735178405632457,
+      "chi2_per_dof": 4.958602284192293
+    }
+  }
+}

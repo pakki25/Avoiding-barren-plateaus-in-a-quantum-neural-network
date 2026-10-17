@@ -1,0 +1,22 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+.env
+*.env
+
+# Scratch space used while building the submission: never part of the delivery,
+# and it is where the original notebook (which contained an API token) was kept.
+_scratch/
+.freebuff/
+
+# Never commit IBM Quantum tokens or other credentials
+qiskit-ibm.json
+# The Colab notebook is kept in the repo but the IBM token has been stripped.
+# If you re-run it with a real token, do not commit the notebook with the token in it.
+# To be safe, strip any api_key = "..." lines before committing:
+#   python -c "import json,sys; nb=json.load(open(sys.argv[1])); [[(cell['source'][i] := cell['source'][i].replace('YOUR_TOKEN_HERE', '<YOUR_IBM_QUANTUM_API_TOKEN>')) for i,line in enumerate(cell['source']) if 'api_key' in line or 'getpass' in line] for cell in nb['cells'] if cell['cell_type']=='code']; json.dump(nb, open(sys.argv[1],'w'), indent=1)" Qiskit_Fall_Fest.ipynb
+

@@ -1,0 +1,45 @@
+{
+  "experiment": "QNN cost on real IBM Quantum hardware",
+  "provenance": "Recorded from the team's Google Colab session (Qiskit Fall Fest notebook). This file is the raw record of a real job; it is not a simulation.",
+  "backend": "ibm_fez",
+  "backend_qubits": 156,
+  "job_id": "db97h70c77vs738116qg",
+  "submitted_utc": "2026-10-16T19:18:57Z",
+  "submitted_local": "2026-10-17 00:48 IST",
+  "shots": 1024,
+  "qubits": 4,
+  "layers": 3,
+  "parameters": [
+    [2.35330497, 5.97351416, 4.59925358, 3.76148219],
+    [0.98029403, 0.98014248, 0.3649501, 5.44234523],
+    [3.77691701, 4.44895122, 0.12933619, 6.09412333]
+  ],
+  "transpiled_circuit": {
+    "optimization_level": 1,
+    "depth": 33,
+    "count_ops": {"rz": 31, "sx": 31, "cz": 9, "measure": 4, "barrier": 1}
+  },
+  "counts": {
+    "0011": 88,
+    "0100": 60,
+    "0010": 199,
+    "0000": 63,
+    "0110": 266,
+    "0111": 89,
+    "1011": 14,
+    "1000": 40,
+    "1001": 17,
+    "1111": 19,
+    "1010": 40,
+    "1101": 13,
+    "0101": 32,
+    "0001": 27,
+    "1100": 34,
+    "1110": 23
+  },
+  "zero_state_count": 63,
+  "zero_state_probability": 0.0615234375,
+  "cost": 0.9384765625,
+  "exact_cost": 0.9171725377712812,
+  "note": "Single 1024-shot run of the 4-qubit, 3-layer circuit. Shot noise alone is about 0.006 on this cost, so a single run cannot separate hardware noise from sampling noise; see figures/shot_noise.png."
+}
